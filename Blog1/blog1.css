@@ -1,0 +1,26 @@
+body{
+    max-width: 700px;
+    width: 60%;
+    margin: 1% auto 1% auto;
+    font-family: Raleway;
+    padding: 0 2.5%;
+    border: 1em solid rgba(75, 73, 73, 0.438);
+}
+
+h4{
+    color: rgb(42, 179, 194);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.smallborder{
+    padding-left: 1%;
+    border-left: 0.25em solid rgba(75, 73, 73, 0.438);
+}
+
+.bottomborder{
+    border-bottom: 0.1em solid #dedede;
+}
+
+
+}

@@ -1,0 +1,62 @@
+body{
+    background: url(https://images.unsplash.com/photo-1517429481096-5bc77134f77c?ixlib=rb-0.3.5&s=37f5c2eeedf7cbfb2ab9cef32acd3946&auto=format&fit=crop&w=1400&q=80);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 5%;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 255, 255, 0.877);    
+} 
+
+html{
+    height: 100%;
+}
+
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#content{
+    text-align: center;
+    padding-top: 20%;    
+}
+
+h1{   
+    font-weight: 900;
+    font-size: 5em;
+}
+
+h1, h3{
+    text-shadow: 0px 2px 4px rgb(0, 0, 0) , 0 8px 12px rgba(27, 27, 27, 0.404), 
+    0px 14px 16px rgba(0, 0, 0, 0.295);    
+}
+
+.btn-default{
+    background-color: rgba(255, 255, 255, 0.658);
+    box-shadow: 3px 2px 5px rgba(37, 37, 37, 0.822);
+}
+
+.navbar-default{
+    background-color: rgba(65, 63, 63, 0.144);
+    border-color: rgba(114, 113, 113, 0);
+    box-shadow: 0 1px 3px rgba(37, 37, 37, 0.658);
+    
+}
+
+.navbar-default .navbar-brand{
+    color: rgba(146, 143, 143, 0.952);
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: rgba(146, 143, 143, 0.952);
+}
+
+.navbar-default .navbar-brand:hover{
+        color: rgb(211, 209, 209);
+
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: rgb(211, 209, 209);
+}
