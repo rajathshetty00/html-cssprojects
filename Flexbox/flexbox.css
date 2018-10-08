@@ -1,0 +1,169 @@
+/* Layout */
+body {
+  font-family: "calibri";
+  box-sizing: border-box;
+  background: linear-gradient(
+    317deg,
+    #ffffff 0%,
+    #f8f8f8 16%,
+    #f2f2f2 33%,
+    #ebebeb 50%,
+    #e5e5e5 66%,
+    #dedede 83%,
+    #d8d8d8 100%
+  );
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+}
+
+.brand {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.nav-buttons {
+  text-align: right;
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.nav-buttons a {
+  display: inline-block;
+  background: #fff;
+  padding: 10px 5px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  margin: 0 5px;
+  font-weight: 600;
+}
+
+.body {
+  display: flex;
+  padding-bottom: 250px;
+  margin-bottom: 50px;
+}
+
+.left-column,
+.center-column,
+.right-column {
+  flex: 1 1 33%;
+  padding: 0 20px;
+}
+
+.center-column {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  padding: 50px 0 125px 0;
+  
+}
+
+.footer div {
+  flex-basis: 20%;
+}
+
+@media (max-width: 650px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer div {
+    flex-basis: 40%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 10px 0;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .center-column,
+  .left-column {
+    text-align: left;
+    margin: 10px 0;
+  }
+  .right-column {
+    display: none;
+  }
+}
+
+/* Styling*/
+.nav {
+  box-shadow: 0px 0px 5px 2px rgba(147, 145, 145, 0.487);
+
+
+
+}
+.brand {
+  letter-spacing: 0.2em;
+}
+
+.x {
+ font-size: 30px;
+ font-weight: 800;
+ position: relative;
+}
+
+.brand .x:hover {
+    color: rgb(58, 182, 220);
+    animation-name: color;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes color {
+  0% {
+    color: rgb(58, 182, 220);
+  }
+
+  100% {
+     color: rgb(0, 255, 153);
+  }
+}
+
+
+
+
+.nav-buttons a:hover {
+  color: #555;
+
+
+
+}
+.footer {
+   background: #222;
+
+}
+
+.left-column {
+  border-right: 2px solid #ccc;
+}
+
+.right-column {
+  border-left:  2px solid #ccc;
+}
