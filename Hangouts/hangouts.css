@@ -1,0 +1,157 @@
+body {
+  background: #ccc;
+  font-family: "Mali", cursive;
+}
+
+/*.heading {
+   background: -webkit-radial-gradient(
+    center center,
+    circle closest-side,
+    #999999,
+    #666666 1000%
+  );
+  background: -moz-radial-gradient(
+    center center,
+    circle closest-side,
+    #999999,
+    #666666 1000%
+  );
+  background: -o-radial-gradient(
+    center center,
+    circle closest-side,
+    #999999,
+    #666666 1000%
+  );
+  background: radial-gradient(
+    center center,
+    circle closest-side,
+    #999999,
+    #666666 1000%
+  );
+} */
+
+/* Heading blinking part */
+.heading {
+  background: rgb(13, 63, 7);
+  position: relative;
+  overflow: hidden;
+  font-size: 30px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.heading h1 {
+  margin: 20px auto 10px auto;
+}
+.heading h1 span i {
+  font-size: 30px;
+  margin: 5px 0 5px 5px;
+}
+.heading::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+
+  background: radial-gradient(rgb(41, 40, 40), rgb(13, 63, 7));
+}
+
+.heading::before {
+  animation: pulse 1s ease alternate infinite;
+}
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.message p {
+  margin: 5px 10px 10px 10px;
+}
+
+.message time {
+  color: #666;
+  font-size: 0.75em;
+  margin: 0 10px;
+}
+
+.convo {
+  padding: 0;
+}
+
+.convo li {
+  display: flex;
+  margin: 10px 0 30px 0;
+}
+.dp {
+  width: 40px;
+  position: relative;
+}
+
+.dp img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: relative;
+}
+
+.mine {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.mine .dp {
+  order: 2;
+}
+
+.mine .message {
+  order: 1;
+}
+
+.message {
+  background: white;
+  position: relative;
+  border-radius: 1%;
+}
+
+.other .dp::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid white;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.mine .dp::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  right: auto;
+  width: 0;
+  height: 0;
+  border: 5px solid white;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.mine .message {
+  box-shadow: -1px -1px 10px #999;
+}
+
+.other .message {
+  box-shadow: 2px 2px 10px #999;
+}
+
+.mine .dp {
+  box-shadow: 0 0 10px #999;
+}
