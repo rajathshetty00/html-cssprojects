@@ -1,0 +1,114 @@
+body {
+    color: #fff;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 30%;
+    height: 110vh;
+    margin: 0 auto;
+    padding: 1em 1.5em;
+    background: #140230;
+    box-sizing: border-box;
+    border: 1px solid black;
+
+}
+
+
+.navigation {
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.navigation li:nth-child(2) {
+    font-size: 0.75em;
+}
+
+
+
+.cover img {
+    margin: 1em 0;
+    width: 100%;
+    height: 50vh;
+}
+
+
+
+
+.song {
+    display: flex;
+    width: 90%;
+    margin: 1em auto;
+    justify-content: space-between;
+
+
+}
+
+.song li:nth-child(2) {
+    font-size: 1.5em;
+}
+
+.song li:first-child {
+    color: green;
+}
+
+
+#bar {
+
+    width: 90%;
+    height: 3px;
+    background: #2b1c44;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+.line {
+    width: 200px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.line::after {
+    width: 10px;
+    height: 10px;
+    content: "";
+    left: 200px;
+    top: -3px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.controls {
+    width: 85%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer p {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3em;
+    text-align: center;
+
+}
